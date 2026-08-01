@@ -1,0 +1,33 @@
+create database webdb6;
+use webdb6;
+CREATE TABLE users_table (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    mobile VARCHAR(20) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    role ENUM('admin', 'user') NOT NULL DEFAULT 'user',
+    approved TINYINT(1) DEFAULT 0
+);
+CREATE TABLE donation_centers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    center_name VARCHAR(150),
+    location VARCHAR(255),
+    contact VARCHAR(50),
+    timings VARCHAR(100),
+    categories VARCHAR(255),
+    donation_type ENUM('Medicine', 'Blood', 'Organ') NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE medicine_categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(100),
+    description VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+Select * from users_table;
+Select * from donation_centers;
+Select * from medicine_categories;

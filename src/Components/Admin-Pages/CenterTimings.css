@@ -1,0 +1,26 @@
+.res-table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    background: #e9f6d3;}
+.res-table th {background: #d2e9ff;padding: 12px;border: 1px solid #9fd0ff;}
+.res-table td {background: #fff;padding: 12px;border: 1px solid #9fd0ff;text-align: center;}
+.btn-accept {
+    padding: 6px 14px;
+    background: green;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;}
+.btn-accept:hover {background: darkgreen;}
+.btn-reject {
+    padding: 6px 14px;
+    background: red;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;}
+.btn-reject:hover {background: darkred;}
+export default CenterTimings;

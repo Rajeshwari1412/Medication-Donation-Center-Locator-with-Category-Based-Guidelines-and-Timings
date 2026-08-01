@@ -1,0 +1,24 @@
+#home-head{
+    color:black;
+    text-align: center;
+  
+  background-clip: text;}
+main {
+  padding-top: 4rem;
+  min-height: calc(100vh - 95px);
+  background-image: url("./images/12.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 2rem;}
+#para-div1{width:70%;margin: 5rem auto;text-align: center;}
+#para-div1 p{margin-top: 1rem;}
+footer{
+  text-align: center;
+   background: linear-gradient(60deg,rgb(183, 127, 8),rgb(187, 232, 52),rgb(255, 101, 198));
+  position: fixed;
+  bottom:0;
+  z-index: 100;
+  padding: 1rem;
+  width: 100%;}
